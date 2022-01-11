@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩虹</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 指定盒模型 */
+        }
+
+        body {
+
+            background: white;
+        }
+
+        .rainbow {
+            height: 200px;
+            overflow: hidden;
+            /* 防止padding叠在一起 */
+        }
+
+        .rainbow div {
+
+            overflow: hidden;
+        }
+
+
+        .rainbow>div {
+            width: 400px;
+            /* 复数会的得到正方形 且宽高相同*/
+            height: 400px;
+            background: #FF0000;
+            border-radius: 50%;
+            /* 正方形的一半 border-radius就是正圆 */
+
+        }
+
+        .rainbow>div>div {
+
+            background: #ff7f00;
+            margin: 10px;
+            /* 每个div都要预留边界，且高度递减，宽度自适应 */
+            height: 380px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div {
+
+            background: #ffff00;
+            margin: 10px;
+            height: 360px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div>div {
+
+            background: #00FF00;
+            margin: 10px;
+            height: 340px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div>div>div {
+
+            background: #00FFFF;
+            margin: 10px;
+            height: 320px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div>div>div>div {
+
+            background: #0000FF;
+            margin: 10px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div>div>div>div>div {
+
+            background: #8B00FF;
+            margin: 10px;
+            height: 280px;
+            border-radius: 50%;
+        }
+
+        .rainbow>div>div>div>div>div>div>div>div {
+            /* 最内层白色圆，与背景同色，遮挡多余部分 */
+            background: white;
+            margin: 10px;
+            height: 260px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rainbow">
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
