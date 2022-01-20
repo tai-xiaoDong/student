@@ -1,0 +1,113 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, ol, li {
+            list-style: none;
+            color: wheat;
+        }
+
+        body {
+            background: rgb(59, 56, 56);
+            color: wheat;
+        }
+header{
+    display:flex;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    color: wheat;
+    background: rgb(59, 56, 56);
+}
+.next{
+    margin-right: 10px;
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: wheat;
+}
+.logo{
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+}
+.kuang{
+    width:100px;
+    margin-right: 5px;
+}
+.biaoti{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+}
+/* 暗影岛以上内容 */
+main{
+    display: flex;
+    /* padding: auto; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:600px；
+}
+/* 导航栏 */
+aside{
+    display:flex;
+    flex-wrap: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    margin-left: 10px;
+}
+/* 以下是故事主体 */
+.book{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+/* 人物故事和图片 */
+.o{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+#t>img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 8px;
+    margin-bottom: 30px;
+    max-width:390px ;
+}
+#t>a{
+    color: wheat;
+}
+#g{
+    padding: 8px;
+    display: flex;
+    max-width: 1000px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-indent: 2em;
+}
+footer{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     margin:30px;
+}
+.ping{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+#di{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
